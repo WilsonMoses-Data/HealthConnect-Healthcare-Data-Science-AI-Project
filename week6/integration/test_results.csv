@@ -1,0 +1,18 @@
+test,status
+Valid batch preserves IDs and bounds,PASS
+Missing required field rejected,PASS
+Duplicate IDs rejected,PASS
+Invalid date rejected,PASS
+Appointment before booking rejected,PASS
+Negative distance rejected,PASS
+Missing age rejected,PASS
+Out-of-scope age rejected,PASS
+Infinite distance rejected,PASS
+Empty batch rejected,PASS
+Blank appointment type rejected,PASS
+Missing distance imputed and flagged,PASS
+Unknown category supported and flagged,PASS
+Selected candidate needs no history columns,PASS
+Outcome IDs and unused history cannot alter scores,PASS
+Row reordering preserves individual scores,PASS
+Single and batch scoring agree,PASS

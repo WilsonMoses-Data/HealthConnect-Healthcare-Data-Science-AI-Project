@@ -1,0 +1,6 @@
+appointment_id,no_show_probability,support_flag,threshold,model_version,warnings
+HC-00024,0.512679709628119,0,0.6,healthconnect-week6-v1,experimental_model
+HC-00028,0.2835086646485667,0,0.6,healthconnect-week6-v1,experimental_model
+HC-00035,0.1508071772624135,0,0.6,healthconnect-week6-v1,experimental_model
+HC-00046,0.46234701907404235,0,0.6,healthconnect-week6-v1,experimental_model
+HC-00048,0.5222225740370016,0,0.6,healthconnect-week6-v1,experimental_model;sunday_schedule_conflict

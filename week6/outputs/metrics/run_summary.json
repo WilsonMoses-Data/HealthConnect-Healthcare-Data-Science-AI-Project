@@ -1,0 +1,154 @@
+{
+  "candidate": "No-history logistic",
+  "threshold": 0.6,
+  "raw_sha256": "1f2c40ae14833b46fe6e1a353446a0e038f19ae06434b37d98545b3e28697137",
+  "train": 3682,
+  "reused_test": 799,
+  "folds": [
+    {
+      "fold": 1,
+      "cutoff": "2025-09-01",
+      "booking_end": "2025-11-01",
+      "train": 2118,
+      "validation": 530
+    },
+    {
+      "fold": 2,
+      "cutoff": "2025-11-01",
+      "booking_end": "2026-01-01",
+      "train": 2689,
+      "validation": 467
+    },
+    {
+      "fold": 3,
+      "cutoff": "2026-01-01",
+      "booking_end": "2026-03-01",
+      "train": 3170,
+      "validation": 281
+    }
+  ],
+  "validation": [
+    {
+      "model": "No-history logistic",
+      "mean_auc": 0.6480823338949754,
+      "auc_sd": 0.008363425137434887,
+      "mean_brier": 0.2348381507124422
+    },
+    {
+      "model": "Week 5 logistic",
+      "mean_auc": 0.6416157819527314,
+      "auc_sd": 0.031638301224464385,
+      "mean_brier": 0.23715500579338014
+    },
+    {
+      "model": "Gradient boosting",
+      "mean_auc": 0.637028819123436,
+      "auc_sd": 0.02402412547702064,
+      "mean_brier": 0.23848898923051562
+    },
+    {
+      "model": "Random forest",
+      "mean_auc": 0.6322762967640388,
+      "auc_sd": 0.027616235879327853,
+      "mean_brier": 0.23935704847323613
+    }
+  ],
+  "comparison": [
+    {
+      "model": "Week 5 logistic",
+      "threshold": 0.5,
+      "n": 799,
+      "roc_auc": 0.6678394922355184,
+      "average_precision": 0.6586224927606028,
+      "brier": 0.2289898462318604,
+      "accuracy": 0.6082603254067585,
+      "precision": 0.5885167464114832,
+      "recall": 0.6356589147286822,
+      "f1": 0.6111801242236025,
+      "tn": 240,
+      "fp": 172,
+      "fn": 141,
+      "tp": 246,
+      "flagged": 418,
+      "flag_rate": 0.523153942428035
+    },
+    {
+      "model": "No-history logistic",
+      "threshold": 0.5,
+      "n": 799,
+      "roc_auc": 0.6653245026466973,
+      "average_precision": 0.6502863049528697,
+      "brier": 0.23041023872021116,
+      "accuracy": 0.6107634543178974,
+      "precision": 0.5855855855855856,
+      "recall": 0.6718346253229974,
+      "f1": 0.6257521058965102,
+      "tn": 228,
+      "fp": 184,
+      "fn": 127,
+      "tp": 260,
+      "flagged": 444,
+      "flag_rate": 0.5556946182728411
+    },
+    {
+      "model": "Random forest",
+      "threshold": 0.5,
+      "n": 799,
+      "roc_auc": 0.6671746820200195,
+      "average_precision": 0.6464034440463612,
+      "brier": 0.22804554017006154,
+      "accuracy": 0.6182728410513142,
+      "precision": 0.6132596685082873,
+      "recall": 0.5736434108527132,
+      "f1": 0.5927903871829105,
+      "tn": 272,
+      "fp": 140,
+      "fn": 165,
+      "tp": 222,
+      "flagged": 362,
+      "flag_rate": 0.4530663329161452
+    },
+    {
+      "model": "Gradient boosting",
+      "threshold": 0.5,
+      "n": 799,
+      "roc_auc": 0.66553147186473,
+      "average_precision": 0.6478809499269973,
+      "brier": 0.22852481144306405,
+      "accuracy": 0.60450563204005,
+      "precision": 0.5988857938718662,
+      "recall": 0.5555555555555556,
+      "f1": 0.5764075067024129,
+      "tn": 268,
+      "fp": 144,
+      "fn": 172,
+      "tp": 215,
+      "flagged": 359,
+      "flag_rate": 0.4493116395494368
+    },
+    {
+      "model": "No-history logistic capacity scenario",
+      "threshold": 0.6,
+      "n": 799,
+      "roc_auc": 0.6653245026466973,
+      "average_precision": 0.6502863049528697,
+      "brier": 0.23041023872021116,
+      "accuracy": 0.6145181476846058,
+      "precision": 0.7046632124352331,
+      "recall": 0.35142118863049093,
+      "f1": 0.4689655172413793,
+      "tn": 355,
+      "fp": 57,
+      "fn": 251,
+      "tp": 136,
+      "flagged": 193,
+      "flag_rate": 0.24155193992490614
+    }
+  ],
+  "python": "3.12.14",
+  "sklearn": "1.8.0",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "integration": "AI-simulated ML Engineering counterpart, requested by user; no human intern exchange claimed",
+  "evaluation_limit": "Old test reused descriptively; candidate and threshold selected internally. Selection validation is not an unbiased final estimate."
+}

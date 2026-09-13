@@ -1,0 +1,6 @@
+appointment_id,booking_date,appointment_date,age,distance_to_clinic_km,appointment_type,appointment_time
+HC-00024,4/27/2026,5/22/2026,51,11.2,General Consultation,Morning
+HC-00028,3/21/2026,3/26/2026,63,5.3,Specialist Consultation,Morning
+HC-00035,4/29/2026,4/30/2026,67,7.5,General Consultation,Morning
+HC-00046,5/24/2026,6/15/2026,73,6,General Consultation,Afternoon
+HC-00048,3/26/2026,5/3/2026,57,2.6,General Consultation,Morning

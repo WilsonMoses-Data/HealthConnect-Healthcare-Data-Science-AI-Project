@@ -1,0 +1,41 @@
+{
+  "model": "No-history logistic",
+  "version": "healthconnect-week6-v1",
+  "target": "No-Show=1; Attended=0; Cancelled excluded",
+  "unit": "appointment",
+  "prediction_point": "booking",
+  "features": [
+    "age",
+    "distance_to_clinic_km",
+    "is_weekend",
+    "log_lead_days",
+    "appointment_type",
+    "appointment_time"
+  ],
+  "raw_required": [
+    "appointment_id",
+    "booking_date",
+    "appointment_date",
+    "age",
+    "distance_to_clinic_km",
+    "appointment_type",
+    "appointment_time"
+  ],
+  "threshold": 0.6,
+  "threshold_status": "hypothetical 30 percent internal validation workload scenario, not clinic approved",
+  "training_rows": 3682,
+  "selection": "highest mean ROC-AUC on three internal temporal folds; mean Brier tie-breaker",
+  "fresh_holdout": false,
+  "history_required": false,
+  "probability_calibrated": false,
+  "use": "controlled Week 7 technical testing only",
+  "limitations": [
+    "fictional data",
+    "future cancellation selection",
+    "reused comparison set",
+    "inconsistent patient IDs",
+    "Sunday conflict",
+    "no demonstrated intervention benefit"
+  ],
+  "input_contract": "Dates month/day/year; age 18-80 prototype scope; nonnegative finite distance or blank; nonempty categories; unique appointment IDs"
+}
