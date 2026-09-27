@@ -1,0 +1,8 @@
+metric,definition,numerator,denominator,value,unit
+Appointment records,All source rows,5000,5000,5000.0,records
+Distinct patients,Distinct anonymized patient identifiers,1696,5000,1696.0,patients
+Completed appointments,Attended + No-Show,4737,5000,4737.0,records
+Attendance rate,Attended / (Attended + No-Show),2314,4737,0.48849482795017946,rate
+No-show rate,No-Show / (Attended + No-Show),2423,4737,0.5115051720498206,rate
+Cancellation rate,Cancelled / all appointment records,263,5000,0.0526,rate
+Reminder coverage,Reminder Sent = Yes / all appointment records,3634,5000,0.7268,rate

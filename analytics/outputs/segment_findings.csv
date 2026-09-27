@@ -1,0 +1,18 @@
+segment_type,segment,no_show_count,completed_appointments,no_show_rate
+Reminder status,No,702,1285,0.5463035019455252
+Reminder status,Yes,1721,3452,0.4985515643105446
+Appointment type,Diagnostic Test,295,567,0.5202821869488536
+Appointment type,Follow-up,728,1344,0.5416666666666666
+Appointment type,General Consultation,973,1980,0.4914141414141414
+Appointment type,Specialist Consultation,427,846,0.5047281323877069
+Appointment day,Friday,339,696,0.4870689655172414
+Appointment day,Monday,348,655,0.5312977099236641
+Appointment day,Saturday,339,683,0.49633967789165445
+Appointment day,Sunday,372,704,0.5284090909090909
+Appointment day,Thursday,335,644,0.5201863354037267
+Appointment day,Tuesday,324,662,0.48942598187311176
+Appointment day,Wednesday,366,693,0.5281385281385281
+Reminder channel,Email,258,506,0.5098814229249012
+Reminder channel,None,702,1285,0.5463035019455252
+Reminder channel,SMS,915,1907,0.47981122181436814
+Reminder channel,WhatsApp,548,1039,0.5274302213666987

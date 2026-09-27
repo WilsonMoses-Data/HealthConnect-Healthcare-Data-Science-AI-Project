@@ -1,0 +1,19 @@
+Variable,Data Type,Description,Example,Notes
+appointment_id,Text,Unique appointment identifier,HC-00001,Primary key
+patient_id,Text,Anonymised patient identifier,P-0421,May appear across multiple appointments
+gender,Text,Recorded gender category,Female,Synthetic and anonymised
+age,Integer,Patient age in years,34,Adult patients only
+age_group,Text,Age band derived from age,25-34,Provided for descriptive analysis
+appointment_type,Text,Type of scheduled appointment,Follow-up,Four appointment categories
+booking_date,Date,Date appointment was booked,2025-04-10,ISO format
+appointment_date,Date,Scheduled appointment date,2025-04-24,ISO format
+appointment_day,Text,Day of week for appointment,Thursday,Derived from appointment date
+appointment_time,Text,Appointment time period,Morning,"Morning, Afternoon, Evening"
+booking_lead_days,Integer,Days between booking and appointment,14,Provided and derivable
+previous_appointments,Integer,Number of previous appointments,3,Synthetic historical count
+previous_no_shows,Integer,Number of previous missed appointments,1,Cannot exceed historical appointments
+reminder_sent,Text,Whether appointment reminder was sent,Yes,Yes or No
+reminder_channel,Text,Reminder delivery channel,SMS,None when no reminder was sent
+distance_to_clinic_km,Decimal,Approximate distance to clinic,8.5,Contains limited missing values
+waiting_time_minutes,Integer,Estimated waiting time,28,Contains limited missing values
+appointment_outcome,Text,Final appointment status,No-Show,"Attended, No-Show, Cancelled"

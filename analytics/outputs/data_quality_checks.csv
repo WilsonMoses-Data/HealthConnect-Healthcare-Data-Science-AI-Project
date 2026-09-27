@@ -1,0 +1,11 @@
+check,observed,expected_or_note,status
+Rows,5000,"5,000 rows in source",PASS
+Unique appointment IDs,5000,Must equal row count,PASS
+Exact duplicate rows,0,0 expected,PASS
+Invalid booking or appointment dates,0,0 expected,PASS
+Lead-day/date mismatches,0,0 expected,PASS
+Weekday/date mismatches,0,0 expected,PASS
+Previous no-shows above prior appointments,0,0 expected,PASS
+Missing distance values,90,Limited missingness noted in dictionary,DOCUMENTED
+Missing waiting time values,60,Timing is unclear,DOCUMENTED
+Repeated patient IDs,1394,"1,696 distinct patients across 5,000 appointments",DOCUMENTED
